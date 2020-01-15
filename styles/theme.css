@@ -39,26 +39,22 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  background: #f58220;
-}
-
-.menu ul li {
-  padding: 25px 20px;
-  text-align: center;
-  white-space: nowrap;
+  max-width: 100%;
 }
 
 .menu ul li a {
+  display: block;
+  text-align: center;
+  padding: 2rem;
+  white-space: nowrap;
+  text-decoration: none;
+  font-size: 1rem;
+  background: #f58220;
   color: #fff;
-  padding: 1rem;
 }
 
-ul li {
+li {
   list-style-type: none;
-  margin: 0 10px;
 }
 
 li a {
