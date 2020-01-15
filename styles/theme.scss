@@ -9,7 +9,13 @@ $background: #fefefe;
 @mixin navGrid {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+
+@mixin alignLeft {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
 }
 
 // Main
@@ -22,33 +28,60 @@ $background: #fefefe;
   padding: 0;
 }
 
-a {
-  text-decoration: none;
+.gutter {
+  width: 70%;
+  margin: auto;
+  max-width: 70%;
 }
 
 // Header
 
-header {
-  position: sticky;
-  top: 0;
+.upper-nav {
+  height: 10vh;
+}
+
+.login-items ul {
+  @include alignLeft();
+  padding: 20px 5px;
+}
+
+.menu ul {
+  @include navGrid();
+  background: $primaryColor;
+}
+
+.menu ul li {
+  padding: 25px 20px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.menu ul li a {
+  color: #fff;
   padding: 1rem;
 }
 
-ul {
-  @include navGrid;
+ul li {
+  list-style-type: none;
+  margin: 0 10px;
 }
 
-li {
-  list-style-type: none;
-  background: $primaryColor;
+li a {
+  text-decoration: none;
 }
 
 // Main Content
 
 body {
-  max-width: 65%;
-  margin: auto;
-  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+// Product Grid
+
+.product-content {
+  height: 100vh;
 }
 
 // Resources
