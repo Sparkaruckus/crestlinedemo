@@ -1,1 +1,50 @@
-/* No CSS *//*# sourceMappingURL=theme.css.map */
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+li {
+  list-style-type: none;
+  background: #f58220;
+}
+
+body {
+  max-width: 65%;
+  margin: auto;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+/*# sourceMappingURL=theme.css.map */

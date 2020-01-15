@@ -3,3 +3,58 @@
 $primaryColor: #f58220;
 $navTab: #566b78;
 $background: #fefefe;
+
+// Flex Nav
+
+@mixin navGrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+// Main
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Header
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+}
+
+ul {
+  @include navGrid;
+}
+
+li {
+  list-style-type: none;
+  background: $primaryColor;
+}
+
+// Main Content
+
+body {
+  max-width: 65%;
+  margin: auto;
+  overflow: hidden;
+}
+
+// Resources
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
