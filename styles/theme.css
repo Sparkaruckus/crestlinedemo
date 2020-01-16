@@ -134,7 +134,8 @@ li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 8vh;
+  height: 9vh;
+  margin: 5px 0;
 }
 
 .main-logo {
@@ -288,6 +289,7 @@ body {
 .product:hover > img,
 .product:hover > button {
   opacity: 0.9;
+  cursor: pointer;
 }
 
 .product button {
@@ -302,7 +304,7 @@ body {
 }
 
 .more-product-content {
-  height: 100vh;
+  width: 100%;
 }
 
 .footer {
