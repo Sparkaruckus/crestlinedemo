@@ -24,7 +24,7 @@
 }
 
 .login-header {
-  margin-bottom: 60px;
+  margin-bottom: 0px;
 }
 
 .menu-header {
@@ -106,12 +106,127 @@
   color: #fff;
 }
 
+.menu ul li a i {
+  font-size: 0.6rem;
+}
+
 li {
   list-style-type: none;
 }
 
 li a {
   text-decoration: none;
+}
+
+.logo-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 8vh;
+}
+
+.main-logo {
+  width: 200px;
+  height: auto;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.container-search {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 800px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.container-input .search-term {
+  max-width: 585px;
+  width: 100%;
+  background-color: white;
+  border: 2px solid #f58220;
+  border-right: none;
+  color: #f58220;
+  padding: 5px 5px 5px 25px;
+  height: 40px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  -webkit-appearance: none;
+  caret-color: #f58220;
+  font-size: 20px;
+}
+
+.container-input .search-term::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.container-input .search-term:focus {
+  color: #f58220;
+}
+
+.container-input .search-term::-webkit-input-placeholder {
+  color: #2f91b6;
+  font-weight: italic;
+}
+
+.container-input .search-term:-ms-input-placeholder {
+  color: #2f91b6;
+  font-weight: italic;
+}
+
+.container-input .search-term::-ms-input-placeholder {
+  color: #2f91b6;
+  font-weight: italic;
+}
+
+.container-input .search-term::placeholder {
+  color: #2f91b6;
+  font-weight: italic;
+}
+
+.container-input .search-button {
+  width: 70px;
+  height: auto;
+  background: white;
+  text-align: center;
+  color: #f58220;
+  border-radius: 0 5px 5px 0;
+  border: 2px solid #f58220;
+  cursor: pointer;
+  font-size: 25px;
+  border-left: none;
 }
 
 body {

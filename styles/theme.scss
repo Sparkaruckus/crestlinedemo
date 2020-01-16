@@ -1,4 +1,6 @@
 // Fonts and colors
+$primary: #0000fa;
+$accent: #f5f6fd;
 
 $primaryColor: #f58220;
 $navTab: #566b78;
@@ -46,7 +48,7 @@ $background: #fefefe;
 }
 
 .login-header {
-  margin-bottom: 60px;
+  margin-bottom: 0px;
 }
 
 .menu-header {
@@ -106,12 +108,93 @@ $background: #fefefe;
   color: #fff;
 }
 
+.menu ul li a i {
+  font-size: 0.6rem;
+}
+
 li {
   list-style-type: none;
 }
 
 li a {
   text-decoration: none;
+}
+
+.logo-header {
+  display: flex;
+  align-items: center;
+  height: 8vh;
+}
+
+.main-logo {
+  width: 200px;
+  height: auto;
+}
+
+// Search Bar
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container-search {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container-input {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  .search-term {
+    max-width: 585px;
+    width: 100%;
+    background-color: white;
+    border: 2px solid $primaryColor;
+    border-right: none;
+    color: $primaryColor;
+    padding: 5px 5px 5px 25px;
+    height: 40px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    -webkit-appearance: none;
+    caret-color: $primaryColor;
+    font-size: 20px;
+
+    &::-webkit-calendar-picker-indicator {
+      display: none;
+    }
+
+    &:focus {
+      color: $primaryColor;
+    }
+
+    &::placeholder {
+      color: #2f91b6;
+      font-weight: italic;
+    }
+  }
+
+  .search-button {
+    width: 70px;
+    height: auto;
+    background: white;
+    text-align: center;
+    color: $primaryColor;
+    border-radius: 0 5px 5px 0;
+    border: 2px solid $primaryColor;
+    cursor: pointer;
+    font-size: 25px;
+    border-left: none;
+  }
 }
 
 // Main Content
