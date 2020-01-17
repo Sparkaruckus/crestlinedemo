@@ -274,12 +274,11 @@ body {
   display: grid;
   -ms-grid-columns: (2fr)[4];
       grid-template-columns: repeat(4, 2fr);
-  grid-gap: 20px;
-  border: solid rgba(0, 0, 0, 0.2) 0.5px;
+  border: solid rgba(0, 0, 0, 0.15) 0.5px;
 }
 
 .product {
-  margin: 20px;
+  margin: 30px;
 }
 
 .product img {

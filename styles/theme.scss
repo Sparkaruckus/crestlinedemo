@@ -242,12 +242,11 @@ body {
   margin-top: 25px;
   display: grid;
   grid-template-columns: repeat(4, 2fr);
-  grid-gap: 20px;
-  border: solid rgba($color: #000000, $alpha: 0.2) 0.5px;
+  border: solid rgba($color: #000000, $alpha: 0.15) 0.5px;
 }
 
 .product {
-  margin: 20px;
+  margin: 30px;
 }
 
 .product img {
